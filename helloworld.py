@@ -29,6 +29,24 @@ else:
     print"bad choice"
 
 
+namebetter =raw_input("Hi, what is your name?: \n")
+choice = raw_input("hello %s, would you like to play a game (y/n)\n")
+
+
+goo_choice_made = False
+
+while not goo_choice_made:
+    if choice.upper().startswith('N'):
+        choice = raw_input("hello %s, would you like to play a game (y/n)\n") %namebetter.capitalize()
+        print "good choice"
+        goo_choice_made =True
+    elif choice.upper().startswith('Y'):
+        print "you die"
+        goo_choice_made = True
+    else:
+        print"its a simple question , yes or no?"
+
+
 
 
 
